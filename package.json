@@ -1,0 +1,19 @@
+{
+  "name": "bleno-tryout",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bleno": "github:notjosh/bleno#inject-bindings",
+    "var bleno = require('bleno-mac');": "github:notjosh/var bleno = require('bleno-mac');",
+    "xpc-connection": "sandeepmistry/node-xpc-connection#pull/26/head"
+  },
+  "resolutions": {
+    "xpc-connection": "sandeepmistry/node-xpc-connection#pull/26/head"
+  }
+}
