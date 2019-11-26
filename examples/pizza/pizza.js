@@ -29,8 +29,8 @@ var PizzaBakeResult = {
 
 function Pizza() {
   events.EventEmitter.call(this);
-  this.toppings = PizzaToppings.EXTRA_CHEESE;
-  this.crust = PizzaCrust.THIN;
+  this.toppings = PizzaToppings.NONE;
+  this.crust = PizzaCrust.NORMAL;
 }
 
 util.inherits(Pizza, events.EventEmitter);
