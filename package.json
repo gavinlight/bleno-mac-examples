@@ -1,19 +1,25 @@
 {
-  "name": "bleno-tryout",
+  "name": "bleno-mac-examples",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pizza": "nodemon ./examples/pizza/peripheral.js",
+    "battery": "nodemon ./examples/battery-service/main.js",
+    "blink": "nodemon ./examples/blink1/main.js",
+    "echo": "nodemon ./examples/echo/main.js"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "bleno": "github:notjosh/bleno#inject-bindings",
-    "var bleno = require('bleno-mac');": "github:notjosh/var bleno = require('bleno-mac');",
+    "bleno-mac": "github:notjosh/bleno-mac",
     "xpc-connection": "sandeepmistry/node-xpc-connection#pull/26/head"
   },
   "resolutions": {
     "xpc-connection": "sandeepmistry/node-xpc-connection#pull/26/head"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.1"
   }
 }

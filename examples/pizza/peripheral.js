@@ -30,14 +30,12 @@ var pizzaService = new PizzaService(new pizza.Pizza());
 // If you don't have a BLE radio, then it will never power on!
 //
 bleno.on('stateChange', function(state) {
-  console.log(state, 456);
   if (state === 'poweredOn') {
     //
     // We will also advertise the service ID in the advertising packet,
     // so it's easier to find.
     //
     bleno.startAdvertising(name, [pizzaService.uuid], function(err) {
-      console.log(err, 123);
       if (err) {
         console.log(err);
       }
@@ -49,7 +47,6 @@ bleno.on('stateChange', function(state) {
 });
 
 bleno.on('advertisingStart', function(err) {
-  console.log(err);
   if (!err) {
     console.log('advertising...');
     //
