@@ -1,7 +1,8 @@
 # Bleno mac examples
 
 ## Installation
-`$ npm install`
+`$ npm ci`
+*The `package-lock.json` has some specific versions in it to properly run on the newest mac versions. Running `npm ci` will ensure only the package lock file is used for installs.*
 
 ## Run examples
 Each example has their own `README.md` with instructions. Walking through the codebases will get you familiar with how these examples can communicate with your app.
